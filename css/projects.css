@@ -1,0 +1,151 @@
+/* start variables */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
+  --bg-color: #eeeeee;
+  --family-awesome: "Font Awesome 6 Free";
+  --padding-wedget: 10px;
+  --border-ccc: 1px solid #ccc;
+  --border-ddd: 1px solid #ddd;
+}
+/* end variables */
+
+/* start all widget */
+.widget-header {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget-header span {
+  font-size: 14px;
+  color: var(--gray-color);
+  font-weight: 500;
+}
+
+.widget-subheader {
+  font-size: 14px;
+  line-height: 1.4;
+  height: 40px;
+}
+
+.widget .avatars {
+  height: 60px;
+  position: relative;
+}
+
+.widget .avatars a {
+  width: 40px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.widget .avatars a:nth-child(2) {
+  left: 25px;
+}
+.widget .avatars a:nth-child(3) {
+  left: 50px;
+}
+.widget .avatars a:nth-child(4) {
+  left: 75px;
+}
+.widget .avatars a:nth-child(5) {
+  left: 100px;
+}
+
+.widget .avatars a:hover {
+  z-index: 1;
+  scale: 1.2;
+}
+
+.widget .avatars a img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: var(--green-color);
+}
+
+.widget .skills {
+  display: flex;
+  gap: 5px;
+  padding: 20px 0;
+  border-top: var(--border-ddd);
+  border-bottom: var(--border-ddd);
+}
+
+@media (max-width: 767px) {
+.widget-subheader {
+  height: auto;
+}
+
+  .widget .skills {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 0;
+  }
+}
+
+.widget .skills span {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--bg-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.widget .box-salary {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 10px;
+}
+
+.widget .level-line {
+  margin: 10px;
+}
+
+.widget .level-line::before {
+  width: 70%;
+  background-color: var(--green-color);
+}
+
+.widget .box-salary span {
+  font-size: 14px;
+  color: var(--gray-color);
+  font-weight: 500;
+}
+/* end all widget */
+
+/* ! start edit widget colors */
+.academy-widget .avatars a img,
+.ahmed-d-widget .avatars a img,
+.ahmed-a-widget .avatars a img {
+  background-color: var(--red-color);
+}
+
+.academy-widget .level-line::before,
+.ahmed-d-widget .level-line::before,
+.ahmed-a-widget .level-line::before {
+  width: 40%;
+  background-color: var(--red-color);
+}
+
+.elzero-widget .avatars a img,
+.mohamed-a-widget .avatars a img,
+.mohamed-d-widget .avatars a img {
+  background-color: var(--blue-color);
+}
+
+.elzero-widget .level-line::before,
+.mohamed-a-widget .level-line::before,
+.mohamed-d-widget .level-line::before {
+  width: 100%;
+  background-color: var(--blue-color);
+}
+/* ! enc edit widget colors */

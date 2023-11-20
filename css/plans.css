@@ -1,0 +1,129 @@
+/* start variables */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #1160b9;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
+  --bg-color: #eeeeee;
+  --family-awesome: "Font Awesome 6 Free";
+  --padding-wedget: 10px;
+  --border-ccc: 1px solid #ccc;
+  --border-ddd: 1px solid #ddd;
+}
+/* end variables */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+}
+
+/* start free-widget */
+.widget .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green-color);
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.widget .head h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.widget .head .price {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  position: relative;
+  gap: 5px;
+}
+
+.widget .head .price span {
+  color: white;
+  font-size: 20px;
+}
+
+.widget .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: var(--border-ddd);
+}
+
+.widget .box i.fa-check {
+  margin-right: 10px;
+  color: var(--green-color);
+}
+
+.widget .box i.fa-xmark {
+  margin-right: 10px;
+  color: var(--red-color);
+}
+
+.widget .box p {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.widget .box i.fa-info {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.widget a {
+  margin: 15px auto 5px;
+  background-color: var(--green-color);
+  padding: 5px 20px;
+}
+
+.widget a:hover {
+  background-color: #27b159;
+}
+/* end free-widget */
+
+/* start basic-widget */
+.basic-widget .head {
+  background-color: var(--blue-color);
+  outline: 3px solid var(--blue-color);
+}
+
+.basic-widget a {
+  background-color: var(--blue-color);
+}
+
+.basic-widget a:hover {
+  background-color: var(--blue-alt-color);
+}
+/* end basic-widget */
+
+/* start premium-widget */
+.premium-widget .head {
+  background-color: var(--orange-color);
+  outline: 3px solid var(--orange-color);
+}
+
+.premium-widget > p {
+  margin: 15px auto 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+/* end premium-widget */

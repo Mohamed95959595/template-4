@@ -1,0 +1,136 @@
+/* start variables */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #1160b9;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
+  --bg-color: #eeeeee;
+  --family-awesome: "Font Awesome 6 Free";
+  --padding-wedget: 10px;
+  --border-ccc: 1px solid #ccc;
+  --border-ddd: 1px solid #ddd;
+}
+/* end variables */
+
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+/* start master-widget */
+.master-widget .avatar {
+  display: flex;
+  flex-direction: column;
+}
+
+.master-widget .avatar span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.master-widget .avatar span i {
+  background-color: var(--bg-color);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.master-widget .avatar span a:hover i {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.master-widget .avatar span span {
+  color: var(--orange-color);
+  font-weight: bold;
+  margin-left: auto;
+  opacity: 0.6;
+}
+
+.master-widget .avatar img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -20px auto 0;
+}
+
+.master-widget .avatar h3 {
+  margin: 10px auto 5px;
+}
+
+.master-widget .avatar p {
+  color: var(--gray-color);
+  margin: 0 auto 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.master-widget .info {
+  padding: 15px 0;
+  margin-bottom: 10px;
+  border-top: var(--border-ddd);
+  border-bottom: var(--border-ddd);
+}
+.master-widget .info span {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.master-widget .info span:last-child {
+  margin-bottom: 0;
+}
+
+.master-widget .info span i {
+  width: 25px;
+  font-size: 14px;
+}
+
+.master-widget .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.master-widget .foot p {
+  flex: 1;
+  color: var(--gray-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.master-widget .foot span {
+  display: flex;
+  gap: 5px;
+}
+
+.master-widget .foot span a {
+  padding: 4px 6px;
+}
+
+.master-widget .foot span a:last-child {
+  background-color: var(--red-color);
+}
+
+.master-widget .foot span a:hover:last-child {
+  background-color: #d33227;
+}
+@media (max-width:767px) {
+  .master-widget .foot {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .master-widget .foot p {
+    order: 2;
+  }
+
+  .master-widget .foot span {
+    gap: 10px;
+  }
+}
+/* end master-widget */
